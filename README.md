@@ -1,4 +1,4 @@
-# BTC RPC Explorer
+# DIAZ RPC Explorer
 
 [![npm version][npm-ver-img]][npm-ver-url] [![NPM downloads][npm-dl-img]][npm-dl-url]
 
@@ -9,10 +9,6 @@ This tool is intended to be a simple, self-hosted explorer for the Bitcoin block
 
 I built this tool because I wanted to use it myself. Whatever reasons one might have for running a full node (trustlessness, technical curiosity, supporting the network, etc) it's helpful to appreciate the "fullness" of your node. With this explorer, you can not only explore the blockchain (in the traditional sense of the term "explorer"), but also explore the functional capabilities of your own node.
 
-Live demos are available at:
-
-* BTC: https://btc.chaintools.io
-* LTC: https://ltc.chaintools.io
 
 # Features
 
@@ -24,7 +20,7 @@ Live demos are available at:
 * Optional transaction history for addresses by querying from ElectrumX, blockchain.com, blockchair.com, or blockcypher.com
 * Mempool summary, with fee, size, and age breakdowns
 * RPC command browser and terminal
-* Currently supports BTC, LTC (support for any Bitcoin-RPC-protocol-compliant coin can be added easily)
+* Currently supports BTC, LTC (support for any Diaz-RPC-protocol-compliant coin can be added easily)
 
 # Getting started
 
@@ -39,8 +35,8 @@ The below instructions are geared toward BTC, but can be adapted easily to other
 ## Instructions
 
 ```bash
-npm install -g btc-rpc-explorer
-btc-rpc-explorer
+npm install -g diaz-rpc-explorer
+diaz-rpc-explorer
 ```
 
 If you're running on mainnet with the default datadir and port, this Should Just Work.
@@ -59,15 +55,15 @@ See [.env-sample](.env-sample) for a list of the options and details for formatt
 You may also pass options as CLI arguments, for example:
 
 ```bash
-btc-rpc-explorer --port 8080 --bitcoind-port 18443 --bitcoind-cookie ~/.bitcoin/regtest/.cookie
+diaz-rpc-explorer --port 8080 --diazd-port 18443 --diazd-cookie ~/.diaz/regtest/.cookie
 ```
 
-See `btc-rpc-explorer --help` for the full list of CLI options.
+See `diaz-rpc-explorer --help` for the full list of CLI options.
 
 ## Run via Docker
 
-1. `docker build -t btc-rpc-explorer .`
-2. `docker run -p 3002:3002 -it btc-rpc-explorer`
+1. `docker build -t diaz-rpc-explorer .`
+2. `docker run -p 3002:3002 -it diaz-rpc-explorer`
 
 # Support
 
